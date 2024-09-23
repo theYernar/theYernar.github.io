@@ -11,30 +11,47 @@
         <div class="product">
             <div class="image"></div>
             <p class="price">Футболка, 7999 тг</p>
-            <button class="buy-btn">Выбрать</button>
+            <button class="buy-btn" onclick="openModal()">Купить</button>
         </div>
 
         <div class="product">
             <div class="image"></div>
             <p class="price">Футболка, 7999 тг</p>
-            <button class="buy-btn">Выбрать</button>
+            <button class="buy-btn" onclick="openModal()">Купить</button>
         </div>
 
         <div class="product">
             <div class="image"></div>
             <p class="price">Футболка, 7999 тг</p>
-            <button class="buy-btn">Выбрать</button>
+            <button class="buy-btn" onclick="openModal()">Купить</button>
         </div>
 
         <div class="product">
             <div class="image"></div>
             <p class="price">Футболка, 7999 тг</p>
-            <button class="buy-btn">Выбрать</button>
+            <button class="buy-btn" onclick="openModal()">Купить</button>
         </div>
     </div>
 
     <div class="footer">
         <button class="checkout-btn">Перейти к оплате</button>
     </div>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="modal-image"></div>
+            <div class="size-selection">
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+            </div>
+            <button class="checkout-btn">Добавить в корзину</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
