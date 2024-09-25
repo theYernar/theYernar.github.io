@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="styles-for-admins.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <button class="delete"> <img src="icons/delete.png" alt="delete"> </button>
+            <div class="image"></div>
+            <p class="price">Футболка, 7999 тг</p>
+            <button class="buy-btn" onclick="openModal()">Выбрать</button>
+        </div>
+
+        <div class="product">
+            <button class="delete"> <img src="icons/delete.png" alt="delete"> </button>
+            <div class="image"></div>
+            <p class="price">Футболка, 7999 тг</p>
+            <button class="buy-btn" onclick="openModal()">Выбрать</button>
+        </div>
+
+        <div class="product">
+            <button class="delete"> <img src="icons/delete.png" alt="delete"> </button>
+            <div class="image"></div>
+            <p class="price">Футболка, 7999 тг</p>
+            <button class="buy-btn" onclick="openModal()">Выбрать</button>
+        </div>
+
+        <div class="product">
+            <button class="delete"> <img src="icons/delete.png" alt="delete"> </button>
+            <div class="image"></div>
+            <p class="price">Футболка, 7999 тг</p>
+            <button class="buy-btn" onclick="openModal()">Выбрать</button>
+        </div>
+
+        <div class="add-product">
+            <button class="add-button" onclick="openAddProductModal()"> <img src="icons/add-icon.png" alt="add-icon"></button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <button class="checkout-btn">Перейти к оплате</button>
+    </div>
+
+    <!-- Модальное окно для выбора товара -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="modal-image"></div>
+            <div class="size-selection">
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+            </div>
+            <button class="checkout-btn">Добавить в корзину</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно для добавления товара -->
+    <div id="add-product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeAddProductModal()">&times;</span>
+            <h2>Добавить товар</h2>
+            <input type="file" placeholder="Загрузить фото товара">
+            <input type="text" placeholder="Название товара">
+            <input type="number" placeholder="Цена товара">
+            <button id="createProductBtn">Создать</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
